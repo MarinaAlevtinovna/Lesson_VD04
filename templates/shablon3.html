@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детская студия Лучик</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    footer {
+        background-color: #343a40;
+        color: #f8f9fa;
+        padding: 2rem 0;
+    }
+
+    footer a {
+        color: #f8f9fa;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #ffc107;
+    }
+    </style>
+</head>
+<body style="background-color: #F0FFF0;">
+    <h1 class="text-center" style="color: #FFA500">Детская студия Лучик</h1>
+    <hr>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/" style="color: #8B4513;">О нас</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/наши цены/" style="color: #8B4513;">Наши цены</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/контакты/" style="color: #8B4513;">Контакты</a>
+        </li>
+    </ul>
+    <hr>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer class="text-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Контакты</h5>
+                    <p>Тел: 8-911-111-11-11</p>
+                    <p>Email: info@example.com</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Адрес</h5>
+                    <p>Московское шоссе, 30к2</p>
+                    <p>Метро Звездная</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Социальные сети</h5>
+                    <a href="#" class="me-3">Facebook</a>
+                    <a href="#" class="me-3">Instagram</a>
+                    <a href="#">VK</a>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <p class="small">&copy; 2024 Детская студия Лучик. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
